@@ -1,0 +1,15 @@
+
+  <div style="top: 100px; left: 800px; position: absolute;">
+<h1 class="title animated jackInTheBox">Concluídas</h1>
+<h3>{{dataDia | date:'dd/MM/yyyy'}}</h3>
+<ul class="animated flipInX">
+  <p *ngIf="todosFiltered.length == 0"><small> Concluída {{dataDia | date:'dd/MM/yyyy'}} </small></p>
+  <li *ngFor="let todo of todosFiltered">
+   {{ todo.title }} |
+
+   <button (click)="remove(todo)"> <i class="far fa-trash-alt"></i> </button>
+    <button *ngIf="todo.done" (click)="markAsUndone(todo)"><i class="fas fa-check-circle"  style="color: rgb(214, 13, 123);"></i>
+    </button> 
+  </li>
+</ul>
+</div>
