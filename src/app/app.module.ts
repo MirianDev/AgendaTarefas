@@ -7,14 +7,18 @@ import { AppComponent } from './app.component';
 import { ConcluidaComponent } from './quadro/concluida/concluida.component';
 import { NaoConcluidaComponent } from './quadro/naoConcluida/naoConcluida.component';
 import { QuadroComponent } from './quadro/quadro.component';
+import { LoginComponent } from './login/login.component';
+import { CadastrarComponent } from './cadastrar/cadastrar.component';
 
 @NgModule({
-  declarations: [
+  declarations: [		
     AppComponent,
     NaoConcluidaComponent,
     ConcluidaComponent,
-    QuadroComponent
-  ],
+    QuadroComponent,
+      LoginComponent,
+      CadastrarComponent
+   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
